@@ -1,0 +1,314 @@
+[
+    {
+        "index": "sgk_01_data01",
+        "db_name": "sgk_01",
+        "table_name": "data01",
+        "columns": "id,source,uid,nickname,username,password,salt,secques,mobile,email,qq,realname,gender,bday,idno,bankno,address"
+    },
+    {
+        "index": "sgk_01_data02",
+        "db_name": "sgk_01",
+        "table_name": "data02",
+        "columns": "id,source,uid,nickname,username,password,salt,secques,mobile,email,qq,realname,gender,bday,idno,bankno,address"
+    },
+    {
+        "index": "sgk_01_data03",
+        "db_name": "sgk_01",
+        "table_name": "data03",
+        "columns": "id,source,uid,nickname,username,password,salt,secques,mobile,email,qq,realname,gender,bday,idno,bankno,address"
+    },
+    {
+        "index": "sgk_02_data01",
+        "db_name": "sgk_02",
+        "table_name": "data01",
+        "columns": "id,source,uid,nickname,username,password,salt,secques,mobile,email,qq,realname,gender,bday,idno,bankno,address"
+    },
+    {
+        "index": "sgk_02_data02",
+        "db_name": "sgk_02",
+        "table_name": "data02",
+        "columns": "id,source,uid,nickname,username,password,salt,secques,mobile,email,qq,realname,gender,bday,idno,bankno,address"
+    },
+    {
+        "index": "sgk_02_data03",
+        "db_name": "sgk_02",
+        "table_name": "data03",
+        "columns": "id,source,uid,nickname,username,password,salt,secques,mobile,email,qq,realname,gender,bday,idno,bankno,address"
+    },
+    {
+        "index": "sgk_03_data01",
+        "db_name": "sgk_03",
+        "table_name": "data01",
+        "columns": "id,source,uid,nickname,username,password,salt,secques,mobile,email,qq,realname,gender,bday,idno,bankno,address"
+    },
+    {
+        "index": "sgk_03_data02",
+        "db_name": "sgk_03",
+        "table_name": "data02",
+        "columns": "id,source,uid,nickname,username,password,salt,secques,mobile,email,qq,realname,gender,bday,idno,bankno,address"
+    },
+    {
+        "index": "sgk_03_data03",
+        "db_name": "sgk_03",
+        "table_name": "data03",
+        "columns": "id,source,uid,nickname,username,password,salt,secques,mobile,email,qq,realname,gender,bday,idno,bankno,address"
+    },
+    {
+        "index": "sgk_04_data01",
+        "db_name": "sgk_04",
+        "table_name": "data01",
+        "columns": "id,source,uid,nickname,username,password,salt,secques,mobile,email,qq,realname,gender,bday,idno,bankno,address"
+    },
+    {
+        "index": "sgk_04_data02",
+        "db_name": "sgk_04",
+        "table_name": "data02",
+        "columns": "id,source,uid,nickname,username,password,salt,secques,mobile,email,qq,realname,gender,bday,idno,bankno,address"
+    },
+    {
+        "index": "sgk_04_data03",
+        "db_name": "sgk_04",
+        "table_name": "data03",
+        "columns": "id,source,uid,nickname,username,password,salt,secques,mobile,email,qq,realname,gender,bday,idno,bankno,address"
+    },
+    {
+        "index": "sgk_05_data01",
+        "db_name": "sgk_05",
+        "table_name": "data01",
+        "columns": "id,source,uid,nickname,username,password,salt,secques,mobile,email,qq,realname,gender,bday,idno,bankno,address"
+    },
+    {
+        "index": "sgk_group01_group01",
+        "db_name": "sgk_group01",
+        "table_name": "group01",
+        "columns": "id,'group' as source,qqmail as email,name as nickname,Gender as gender,concat('QunNum:',QunNum)note"
+    },
+    {
+        "index": "sgk_group01_group02",
+        "db_name": "sgk_group01",
+        "table_name": "group02",
+        "columns": "id,'group' as source,qqmail as email,name as nickname,Gender as gender,concat('QunNum:',QunNum)note"
+    },
+    {
+        "index": "sgk_group01_group03",
+        "db_name": "sgk_group01",
+        "table_name": "group03",
+        "columns": "id,'group' as source,qqmail as email,name as nickname,Gender as gender,concat('QunNum:',QunNum)note"
+    },
+    {
+        "index": "sgk_group02_group01",
+        "db_name": "sgk_group02",
+        "table_name": "group01",
+        "columns": "id,'group' as source,qqmail as email,name as nickname,Gender as gender,concat('QunNum:',QunNum)note"
+    },
+    {
+        "index": "sgk_group02_group02",
+        "db_name": "sgk_group02",
+        "table_name": "group02",
+        "columns": "id,'group' as source,qqmail as email,name as nickname,Gender as gender,concat('QunNum:',QunNum)note"
+    },
+    {
+        "index": "sgk_group02_group03",
+        "db_name": "sgk_group02",
+        "table_name": "group03",
+        "columns": "id,'group' as source,qqmail as email,name as nickname,Gender as gender,concat('QunNum:',QunNum)note"
+    },
+    {
+        "index": "sgk_group03_group01",
+        "db_name": "sgk_group03",
+        "table_name": "group01",
+        "columns": "id,'group' as source,qqmail as email,name as nickname,Gender as gender,concat('QunNum:',QunNum)note"
+    },
+    {
+        "index": "sgk_group03_group02",
+        "db_name": "sgk_group03",
+        "table_name": "group02",
+        "columns": "id,'group' as source,qqmail as email,name as nickname,Gender as gender,concat('QunNum:',QunNum)note"
+    },
+    {
+        "index": "sgk_group03_group03",
+        "db_name": "sgk_group03",
+        "table_name": "group03",
+        "columns": "id,'group' as source,qqmail as email,name as nickname,Gender as gender,concat('QunNum:',QunNum)note"
+    },
+    {
+        "index": "sgk_group04_group01",
+        "db_name": "sgk_group04",
+        "table_name": "group01",
+        "columns": "id,'group' as source,qqmail as email,name as nickname,Gender as gender,concat('QunNum:',QunNum)note"
+    },
+    {
+        "index": "sgk_group04_group02",
+        "db_name": "sgk_group04",
+        "table_name": "group02",
+        "columns": "id,'group' as source,qqmail as email,name as nickname,Gender as gender,concat('QunNum:',QunNum)note"
+    },
+    {
+        "index": "sgk_group04_group03",
+        "db_name": "sgk_group04",
+        "table_name": "group03",
+        "columns": "id,'group' as source,qqmail as email,name as nickname,Gender as gender,concat('QunNum:',QunNum)note"
+    },
+    {
+        "index": "sgk_group05_group01",
+        "db_name": "sgk_group05",
+        "table_name": "group01",
+        "columns": "id,'group' as source,qqmail as email,name as nickname,Gender as gender,concat('QunNum:',QunNum)note"
+    },
+    {
+        "index": "sgk_group05_group02",
+        "db_name": "sgk_group05",
+        "table_name": "group02",
+        "columns": "id,'group' as source,qqmail as email,name as nickname,Gender as gender,concat('QunNum:',QunNum)note"
+    },
+    {
+        "index": "sgk_group05_group03",
+        "db_name": "sgk_group05",
+        "table_name": "group03",
+        "columns": "id,'group' as source,qqmail as email,name as nickname,Gender as gender,concat('QunNum:',QunNum)note"
+    },
+    {
+        "index": "sgk_group06_group01",
+        "db_name": "sgk_group06",
+        "table_name": "group01",
+        "columns": "id,'group' as source,qqmail as email,name as nickname,Gender as gender,concat('QunNum:',QunNum)note"
+    },
+    {
+        "index": "sgk_group06_group02",
+        "db_name": "sgk_group06",
+        "table_name": "group02",
+        "columns": "id,'group' as source,qqmail as email,name as nickname,Gender as gender,concat('QunNum:',QunNum)note"
+    },
+    {
+        "index": "sgk_group06_group03",
+        "db_name": "sgk_group06",
+        "table_name": "group03",
+        "columns": "id,'group' as source,qqmail as email,name as nickname,Gender as gender,concat('QunNum:',QunNum)note"
+    },
+    {
+        "index": "sgk_group07_group01",
+        "db_name": "sgk_group07",
+        "table_name": "group01",
+        "columns": "id,'group' as source,qqmail as email,name as nickname,Gender as gender,concat('QunNum:',QunNum)note"
+    },
+    {
+        "index": "sgk_group07_group02",
+        "db_name": "sgk_group07",
+        "table_name": "group02",
+        "columns": "id,'group' as source,qqmail as email,name as nickname,Gender as gender,concat('QunNum:',QunNum)note"
+    },
+    {
+        "index": "sgk_mail_qq_com_01",
+        "db_name": "sgk_mail",
+        "table_name": "qq_com_01",
+        "columns": "id,source,email,password"
+    },
+    {
+        "index": "sgk_mail_qq_com_02",
+        "db_name": "sgk_mail",
+        "table_name": "qq_com_02",
+        "columns": "id,source,email,password"
+    },
+    {
+        "index": "sgk_mail_qq_com_03",
+        "db_name": "sgk_mail",
+        "table_name": "qq_com_03",
+        "columns": "id,source,email,password"
+    },
+    {
+        "index": "sgk_mail_qq_com_04",
+        "db_name": "sgk_mail",
+        "table_name": "qq_com_04",
+        "columns": "id,source,email,password"
+    },
+    {
+        "index": "sgk_mail_unknown",
+        "db_name": "sgk_mail",
+        "table_name": "unknown",
+        "columns": "id,source,email,password"
+    },
+    {
+        "index": "sgk_mail_wasabii_com_hk_01",
+        "db_name": "sgk_mail",
+        "table_name": "wasabii_com_hk_01",
+        "columns": "id,source,email,password"
+    },
+    {
+        "index": "sgk_mail_wasabii_com_hk_02",
+        "db_name": "sgk_mail",
+        "table_name": "wasabii_com_hk_02",
+        "columns": "id,source,email,password"
+    },
+    {
+        "index": "sgk_qq_qq01",
+        "db_name": "sgk_qq",
+        "table_name": "qq01",
+        "columns": "id,source,qq,password"
+    },
+    {
+        "index": "sgk_qq_qq02",
+        "db_name": "sgk_qq",
+        "table_name": "qq02",
+        "columns": "id,source,qq,password"
+    },
+    {
+        "index": "sgk_qq_qq03",
+        "db_name": "sgk_qq",
+        "table_name": "qq03",
+        "columns": "id,source,qq,password"
+    },
+    {
+        "index": "sgk_unknown_data01",
+        "db_name": "sgk_unknown",
+        "table_name": "data01",
+        "columns": "id,source,uid,nickname,username,password,salt,secques,mobile,email,qq,realname,gender,bday,idno,bankno,address"
+    },
+    {
+        "index": "sgk_unknown_data02",
+        "db_name": "sgk_unknown",
+        "table_name": "data02",
+        "columns": "id,source,uid,nickname,username,password,salt,secques,mobile,email,qq,realname,gender,bday,idno,bankno,address"
+    },
+    {
+        "index": "sgk_unknown_data03",
+        "db_name": "sgk_unknown",
+        "table_name": "data03",
+        "columns": "id,source,uid,nickname,username,password,salt,secques,mobile,email,qq,realname,gender,bday,idno,bankno,address"
+    },
+    {
+        "index": "sgk_unknown_data04",
+        "db_name": "sgk_unknown",
+        "table_name": "data04",
+        "columns": "id,source,uid,nickname,username,password,salt,secques,mobile,email,qq,realname,gender,bday,idno,bankno,address"
+    },
+    {
+        "index": "sgk_unknown_data05",
+        "db_name": "sgk_unknown",
+        "table_name": "data05",
+        "columns": "id,source,uid,nickname,username,password,salt,secques,mobile,email,qq,realname,gender,bday,idno,bankno,address"
+    },
+    {
+        "index": "sgk_unknown_data06",
+        "db_name": "sgk_unknown",
+        "table_name": "data06",
+        "columns": "id,source,uid,nickname,username,password,salt,secques,mobile,email,qq,realname,gender,bday,idno,bankno,address"
+    },
+    {
+        "index": "sgk_unknown_data07",
+        "db_name": "sgk_unknown",
+        "table_name": "data07",
+        "columns": "id,source,uid,nickname,username,password,salt,secques,mobile,email,qq,realname,gender,bday,idno,bankno,address"
+    },
+    {
+        "index": "unknown1_uc_members",
+        "db_name": "unknown1",
+        "table_name": "uc_members",
+        "columns": "id,source,username,email,password,salt,secques"
+    },
+    {
+        "index": "unknown1_shegongku_bbs",
+        "db_name": "unknown1",
+        "table_name": "shegongku_bbs",
+        "columns": "id,source,username,email,password"
+    }
+]

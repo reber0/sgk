@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/static/jquery.min.js"></script>
+    <style type="text/css">
+        .main {
+            text-align:center;
+            width:80%;
+            margin-top:100px;
+            margin-bottom:100px;
+            margin-left:10%;
+            margin-right:10%;
+        }
+        #keyword {
+            width: 260px;
+            height: 30px;
+        }
+        #submit {
+            width: 60px;
+            height: 35px;
+        }
+    </style>
+    <title>{{ .title }}</title>
+</head>
+<body>
+    <div class="main">
+        <form>
+            <input placeholder="uid、username、mobile、email、qq" name="keyword" id="keyword">
+            &nbsp;<input type="button" onclick="query()" value="搜一下!" id="submit">
+        </form>
+        <hr>
+        <div style="text-align:center;" id="tableInfo"></div>
+    <div>
+
+    <script type="text/javascript">
+        function query() {
+            $("#tableInfo table").remove();
+            $.ajax({
+                type : "post",
+                async : true,
+                url : "/query",
+                dataType : "json",
+                contentType: "application/json;charset=utf-8",
+                data : JSON.stringify({"keyword": $('#keyword').val()}),
+                success : function(res) {
+                    if (res.redirect) {
+                        window.location.href = res.redirect;
+                    }
+
+                    var tableInfos = document.getElementById('tableInfo');
+                    if (res.data != null && res.data.length > 0) {
+                        //动态生成表格
+                        var table = '<table id="tabId" style="text-align:center;width:100%;" border="1">';
+                        table += '<tr><th style="min-width:53px">数据库</th>';
+                        table += '<th style="min-width:32px">UID</th>';
+                        table += '<th style="min-width:37px">昵称</th>';
+                        table += '<th style="min-width:53px">用户名</th>';
+                        table += '<th style="min-width:37px">密码</th>';
+                        table += '<th style="min-width:37px">盐值</th>';
+                        table += '<th style="min-width:53px">手机号</th>';
+                        table += '<th style="min-width:37px">邮箱</th>';
+                        table += '<th style="min-width:29px">QQ</th>';
+                        table += '<th style="min-width:37px">姓名</th>';
+                        table += '<th style="min-width:69px">身份证号</th>';
+                        table += '<th style="min-width:69px">银行卡号</th>';
+                        table += '<th style="min-width:37px">地址</th></tr>';
+                        table += '</table>';
+                        tableInfos.innerHTML = table;
+
+                        for(var i=0;i<res.data.length;i++){
+                            console.log(res.data[i]);
+                            var tr = "<tr>";
+                            tr += '<td style="white-space:nowrap;">'+res.data[i].source+'</td>';
+                            tr += '<td style="white-space:nowrap;">'+res.data[i].uid+'</td>';
+                            tr += '<td style="white-space:nowrap;">'+res.data[i].nickname+'</td>';
+                            tr += '<td style="white-space:nowrap;">'+res.data[i].username+'</td>';
+                            tr += '<td style="white-space:nowrap;">'+res.data[i].password+'</td>';
+                            tr += '<td style="white-space:nowrap;">'+res.data[i].salt+'</td>';
+                            tr += '<td style="white-space:nowrap;">'+res.data[i].mobile+'</td>';
+                            tr += '<td style="white-space:nowrap;">'+res.data[i].email+'</td>';
+                            tr += '<td style="white-space:nowrap;">'+res.data[i].qq+'</td>';
+                            tr += '<td style="white-space:nowrap;">'+res.data[i].realname+'</td>';
+                            tr += '<td style="white-space:nowrap;">'+res.data[i].idno+'</td>';
+                            tr += '<td style="white-space:nowrap;">'+res.data[i].bankno+'</td>';
+                            tr += '<td style="white-space:nowrap;">'+res.data[i].address+'</td></tr>';
+                            $("#tabId").append(tr);
+                        }
+                    } else {
+                        tableInfos.innerHTML = "<p style='color:red'>未搜索到 "+$('#keyword').val()+" 相关结果</p>";
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
