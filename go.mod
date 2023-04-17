@@ -1,4 +1,4 @@
-module sgk
+module github.com/reber0/sgk
 
 go 1.17
 
