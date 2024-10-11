@@ -2,7 +2,7 @@
  * @Author: reber
  * @Mail: reber0ask@qq.com
  * @Date: 2022-03-24 17:34:48
- * @LastEditTime: 2022-09-20 11:02:13
+ * @LastEditTime: 2024-10-11 15:41:52
  */
 
 package main
@@ -20,7 +20,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/sessions"
 	"github.com/manticoresoftware/go-sdk/manticore"
-	"github.com/reber0/go-common/utils"
+	"github.com/reber0/goutils"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )
@@ -70,7 +70,7 @@ func main() {
 
 	r.GET("/", func(c *gin.Context) {
 		remoteIP := c.ClientIP()
-		if !utils.InSlice(remoteIP, whiteIP) {
+		if !goutils.IsInCol(remoteIP, whiteIP) {
 			c.String(403, "access denied")
 			c.Abort()
 		} else {
@@ -90,7 +90,7 @@ func main() {
 
 func doLogin(c *gin.Context) {
 	remoteIP := c.ClientIP()
-	if !utils.InSlice(remoteIP, whiteIP) {
+	if !goutils.IsInCol(remoteIP, whiteIP) {
 		c.String(403, "access denied")
 	} else {
 		type PostData struct {
@@ -127,7 +127,7 @@ func doLogin(c *gin.Context) {
 
 func doShow(c *gin.Context) {
 	remoteIP := c.ClientIP()
-	if !utils.InSlice(remoteIP, whiteIP) {
+	if !goutils.IsInCol(remoteIP, whiteIP) {
 		c.String(403, "access denied")
 	} else {
 		// 获取客户端 cookie 并校验
@@ -156,7 +156,7 @@ func doShow(c *gin.Context) {
 
 func doQuery(c *gin.Context) {
 	remoteIP := c.ClientIP()
-	if !utils.InSlice(remoteIP, whiteIP) {
+	if !goutils.IsInCol(remoteIP, whiteIP) {
 		c.String(403, "access denied")
 	} else {
 		// 获取客户端 cookie 并校验
